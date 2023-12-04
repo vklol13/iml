@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-KklmyE/w5cHxLg+6UX3EwPaRsL/5+hRfwBN4sEoVgbJeAnxN9pOh+ITWb/R1Rdp2m0HZw+2gW+e1JXFOm5Puwg==" crossorigin="anonymous" />
+    <title>IML - Seu Site</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.jpeg" alt="Logo do IML" class="logo">
+            <h1>IML - Seu Site</h1>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Bem-vindo ao IML</h2>
+            <p>Explore um mundo de possibilidades conosco.</p>
+        </div>
+    </section>
+
+    <section class="post-form">
+        <div class="container">
+            <h2>Crie uma Postagem</h2>
+            <form id="postForm">
+                <label for="postTitle">Título:</label>
+                <input type="text" id="postTitle" required>
+
+                <label for="postContent">Conteúdo:</label>
+                <textarea id="postContent" required></textarea>
+
+                <button type="button" onclick="addPost()"><i class="fas fa-paper-plane"></i> Publicar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="posts">
+        <div class="container" id="postContainer">
+            <!-- As postagens serão adicionadas aqui dinamicamente -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 IML - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
